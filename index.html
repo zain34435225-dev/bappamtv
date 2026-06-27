@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="robots" content="index, follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bappam TV | Explore Movies, Shows & Entertainment News</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:#fff;
+}
+
+a{
+text-decoration:none;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+background:rgba(5,8,22,.90);
+backdrop-filter:blur(20px);
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.container{
+width:90%;
+max-width:1250px;
+margin:auto;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#ff6a00;
+}
+
+.logo span{
+color:#fff;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+.nav-links a{
+color:#fff;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#ff6a00;
+}
+
+.btn{
+padding:12px 28px;
+border-radius:40px;
+background:linear-gradient(90deg,#ff6a00,#ff2d55);
+color:#fff;
+font-weight:600;
+transition:.4s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 40px rgba(255,90,0,.35);
+}
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(5,8,22,.75),rgba(5,8,22,.88)),
+
+url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80');
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.hero-content{
+max-width:700px;
+}
+
+.tag{
+display:inline-block;
+padding:8px 20px;
+background:#ff6a00;
+border-radius:40px;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.hero h1{
+
+font-size:68px;
+
+line-height:1.1;
+
+margin-bottom:20px;
+
+}
+
+.hero h1 span{
+background:linear-gradient(90deg,#ff6a00,#ff2d55);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+
+font-size:18px;
+
+color:#d9d9d9;
+
+margin-bottom:35px;
+
+line-height:1.8;
+
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.primary{
+
+padding:16px 38px;
+
+background:linear-gradient(90deg,#ff6a00,#ff2d55);
+
+border-radius:50px;
+
+font-weight:600;
+
+color:#fff;
+
+}
+
+.secondary{
+
+padding:16px 38px;
+
+border:2px solid #ff6a00;
+
+border-radius:50px;
+
+color:#fff;
+
+}
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+margin-top:-70px;
+
+position:relative;
+
+z-index:5;
+
+}
+
+.stat{
+
+background:#11192d;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.stat:hover{
+
+transform:translateY(-8px);
+
+background:#17233f;
+
+}
+
+.stat h2{
+
+font-size:38px;
+
+color:#ff6a00;
+
+margin-bottom:10px;
+
+}
+
+.section{
+
+padding:100px 0;
+
+}
+
+.title{
+
+font-size:42px;
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+.subtitle{
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto;
+
+color:#cfcfcf;
+
+line-height:1.9;
+
+}
+
+.cards{
+
+margin-top:60px;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:#10182d;
+
+padding:35px;
+
+border-radius:18px;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.06);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+background:#17223b;
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#ff6a00;
+
+font-size:24px;
+
+}
+
+.card p{
+
+color:#d4d4d4;
+
+line-height:1.8;
+
+}
+
+@media(max-width:900px){
+
+.nav-links{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="navbar">
+
+<div class="logo">🎬 <span>Bappam</span> TV</div>
+
+<ul class="nav-links">
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Movies</a></li>
+<li><a href="#">Web Series</a></li>
+<li><a href="#">News</a></li>
+<li><a href="#">Reviews</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+<a href="#" class="btn">Explore</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="tag">
+🔥 Latest Entertainment Updates
+</div>
+
+<h1>
+Explore <span>Bappam TV</span><br>
+Movies, Shows & News
+</h1>
+
+<p>
+
+Stay updated with Telugu Movies, Tamil Movies,
+Hindi Cinema, Hollywood Films, Web Series,
+Celebrity News, Official Trailers,
+Reviews and Entertainment Stories —
+all in one destination.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://bappam-tv.in/" class="primary">Explore Movies</a>
+
+<a href="https://sites.google.com/view/bappamtvmovies/" class="secondary">Latest News</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<div class="stats">
+
+<div class="stat">
+<h2>5000+</h2>
+<p>Movie Articles</p>
+</div>
+
+<div class="stat">
+<h2>1200+</h2>
+<p>Reviews</p>
+</div>
+
+<div class="stat">
+<h2>350+</h2>
+<p>Web Series</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Entertainment News</p>
+</div>
+
+</div>
+
+</section>
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="section" id="about">
+
+<div class="container">
+
+<h2 class="title">Welcome to Bappam TV</h2>
+
+<p class="subtitle">
+
+Bappam TV is your trusted entertainment destination where movie lovers can
+discover the latest information about films, web series, celebrities,
+official trailers and entertainment news. Our goal is to help users explore
+quality entertainment without visiting multiple websites.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🎬 Movies</h3>
+
+<p>
+
+Explore Telugu Movies, Tamil Movies, Hindi Movies,
+Malayalam Movies, Kannada Movies,
+Hollywood Movies and South Indian Cinema.
+
+We provide release updates, cast information,
+trailers, production news and interesting facts
+about popular films.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📺 Web Series</h3>
+
+<p>
+
+Digital entertainment is growing every year.
+
+Discover trending web series,
+new season announcements,
+episode guides,
+streaming platforms,
+audience reviews
+and production updates.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📰 Entertainment News</h3>
+
+<p>
+
+Stay informed with celebrity interviews,
+movie announcements,
+film festivals,
+award shows,
+box office collections,
+official posters,
+teasers and trailers.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= MOVIES ================= -->
+
+<section class="section" id="movies" style="background:#08111f;">
+
+<div class="container">
+
+<h2 class="title">Explore Movies From Every Industry</h2>
+
+<p class="subtitle">
+
+Every film tells a different story.
+
+Bappam TV covers multiple film industries
+so visitors can easily discover
+their favorite movies and also explore
+new entertainment from around the world.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🍿 Telugu Movies</h3>
+
+<p>
+
+Find the latest Telugu movie news,
+release dates,
+cast information,
+official trailers
+and reviews.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎥 Tamil Movies</h3>
+
+<p>
+
+Stay connected with Tamil cinema,
+popular actors,
+directors,
+music releases
+and blockbuster films.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎞 Hindi Movies</h3>
+
+<p>
+
+Read Bollywood entertainment news,
+upcoming releases,
+celebrity stories,
+movie reviews
+and production updates.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌎 Hollywood</h3>
+
+<p>
+
+Discover international films,
+Hollywood blockbusters,
+science fiction,
+action,
+thrillers
+and award-winning productions.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎭 South Indian Cinema</h3>
+
+<p>
+
+Explore South Indian movies from
+Telugu,
+Tamil,
+Kannada
+and Malayalam industries.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🌍 International Cinema</h3>
+
+<p>
+
+Enjoy information about
+global cinema,
+independent films,
+international festivals
+and worldwide entertainment.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= NEWS ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="title">Latest Entertainment News</h2>
+
+<p class="subtitle">
+
+The entertainment world changes every day.
+Bappam TV helps readers stay updated
+with reliable entertainment information.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🔥 Movie Announcements</h3>
+
+<p>
+
+Official announcements,
+first look posters,
+teasers,
+trailers,
+release schedules
+and production updates.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⭐ Celebrity Updates</h3>
+
+<p>
+
+Read interviews,
+career milestones,
+award wins,
+upcoming projects
+and industry news.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 Box Office</h3>
+
+<p>
+
+Explore movie performance,
+industry reports,
+audience response
+and entertainment trends.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= REVIEWS SECTION ================= -->
+
+<section class="section" id="reviews" style="background:#0d1628;">
+
+<div class="container">
+
+<h2 class="title">Movie Reviews & Recommendations</h2>
+
+<p class="subtitle">
+
+Finding the right movie becomes easier when you have reliable information.
+Bappam TV provides balanced reviews that help audiences understand
+what makes every movie unique without revealing unnecessary spoilers.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🎭 Story</h3>
+
+<p>
+Every review discusses the storyline,
+character development,
+screenplay and overall storytelling experience.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎬 Direction</h3>
+
+<p>
+We analyze the director's vision,
+cinematography,
+editing,
+background music
+and production quality.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⭐ Entertainment Value</h3>
+
+<p>
+Our reviews focus on acting,
+visual effects,
+emotional impact,
+music and audience experience.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section" id="categories">
+
+<div class="container">
+
+<h2 class="title">Entertainment Categories</h2>
+
+<p class="subtitle">
+
+Browse your favorite content by genre and quickly discover movies
+that match your interests.
+
+</p>
+
+<div class="cards">
+
+<div class="card"><h3>🔥 Action</h3></div>
+<div class="card"><h3>😂 Comedy</h3></div>
+<div class="card"><h3>❤️ Romance</h3></div>
+<div class="card"><h3>👻 Horror</h3></div>
+<div class="card"><h3>🕵 Thriller</h3></div>
+<div class="card"><h3>🔍 Mystery</h3></div>
+<div class="card"><h3>🚀 Science Fiction</h3></div>
+<div class="card"><h3>🏰 Fantasy</h3></div>
+<div class="card"><h3>🎯 Adventure</h3></div>
+<div class="card"><h3>👨‍👩‍👧 Family</h3></div>
+<div class="card"><h3>🎨 Animation</h3></div>
+<div class="card"><h3>📚 Documentary</h3></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CELEBRITY SECTION ================= -->
+
+<section class="section" style="background:#0d1628;">
+
+<div class="container">
+
+<h2 class="title">Celebrity Spotlight</h2>
+
+<p class="subtitle">
+
+Behind every successful movie are talented actors,
+directors,
+writers,
+producers and musicians.
+Bappam TV shares celebrity biographies,
+career achievements,
+filmographies,
+awards and upcoming projects.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🎭 Actors</h3>
+
+<p>
+
+Explore career highlights,
+award-winning performances,
+popular films
+and upcoming releases.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎬 Directors</h3>
+
+<p>
+
+Learn about visionary filmmakers
+who bring unforgettable stories
+to the big screen.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎵 Music & Crew</h3>
+
+<p>
+
+Discover composers,
+writers,
+editors,
+cinematographers
+and creative artists
+behind every production.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TRAILERS ================= -->
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="title">Official Trailers & First Looks</h2>
+
+<p class="subtitle">
+
+Watch updates about official teasers,
+trailers,
+announcement videos,
+first-look posters
+and promotional campaigns
+for upcoming movies and web series.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🎥 Official Teasers</h3>
+
+<p>
+
+Stay informed about teaser launches
+from Telugu,
+Tamil,
+Hindi,
+Hollywood
+and South Indian cinema.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📺 Web Series Trailers</h3>
+
+<p>
+
+Find previews of upcoming seasons,
+OTT releases,
+streaming originals
+and digital entertainment.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>🍿 Upcoming Releases</h3>
+
+<p>
+
+Never miss release confirmations,
+launch dates,
+new posters
+and official announcements.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= VISION ================= -->
+
+<section class="section" style="background:#08111f;">
+
+<div class="container">
+
+<h2 class="title">Our Vision & Mission</h2>
+
+<p class="subtitle">
+
+Our vision is to become one of the leading entertainment information platforms
+where visitors can discover movies,
+television shows,
+web series,
+celebrities and industry updates with confidence.
+
+We believe entertainment should be easy to explore,
+well organized
+and accessible for everyone.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer style="background:#050816;padding:70px 0 30px;border-top:1px solid rgba(255,255,255,.08);">
+
+<div class="container">
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;">
+
+<div>
+
+<h2 style="color:#ff6a00;margin-bottom:20px;">🎬 Bappam TV</h2>
+
+<p style="color:#bdbdbd;line-height:1.9;">
+
+Explore movies,
+web series,
+celebrity news,
+reviews,
+official trailers
+and the latest entertainment updates
+from one trusted destination.
+
+</p>
+
+</div>
+
+<div>
+
+<h3 style="margin-bottom:20px;">Quick Links</h3>
+
+<p><a href="#" style="color:#bdbdbd;">Home</a></p>
+<p><a href="#" style="color:#bdbdbd;">Movies</a></p>
+<p><a href="#" style="color:#bdbdbd;">News</a></p>
+<p><a href="#" style="color:#bdbdbd;">Reviews</a></p>
+
+</div>
+
+<div>
+
+<h3 style="margin-bottom:20px;">Categories</h3>
+
+<p style="color:#bdbdbd;">Action</p>
+<p style="color:#bdbdbd;">Comedy</p>
+<p style="color:#bdbdbd;">Romance</p>
+<p style="color:#bdbdbd;">Hollywood</p>
+
+</div>
+
+</div>
+
+<hr style="margin:50px 0;border-color:#222;">
+
+<p style="text-align:center;color:#9d9d9d;">
+
+© 2026 Bappam TV. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+</body>
+</html>
